@@ -1,0 +1,107 @@
+/* Existing CSS */
+@media screen and (min-width: 650px) {
+  .app-bar {
+    grid-template-columns: 1fr auto;
+    padding: 8px 32px;
+  }
+
+  .app-bar .app-bar__brand h1 {
+    font-size: 1.5em;
+  }
+
+  .app-bar .app-bar__menu {
+    display: none;
+  }
+
+  .app-bar .app-bar__navigation {
+    position: static;
+    width: 100%;
+  }
+
+  .app-bar .app-bar__navigation ul li {
+    display: inline-block;
+  }
+
+  .app-bar .app-bar__navigation ul li a {
+    display: inline-block;
+    width: 120px;
+    text-align: center;
+    margin: 0;
+  }
+
+  .restaurants {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  .app-bar .app-bar__brand h1 {
+    font-size: 2em;
+  }
+}
+
+@media screen and (min-width: 850px) {
+  .restaurants {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .restaurants {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media screen and (min-width: 1600px) {
+  .restaurants {
+    grid-template-columns: repeat(5, 1fr);
+  }
+}
+
+/* New CSS for smaller screens */
+@media screen and (max-width: 649px) {
+  .restaurants {
+    grid-template-columns: 1fr;
+  }
+}
+
+@keyframes fade {
+  from{opacity: 0.3}
+  to {opacity: 1}
+}
+
+@media (max-width: 992px){
+  .slides .navigation .prev, .slides .navigation .next{
+    font-size: 18px;
+    padding: 13px;
+    min-width: 44px;
+    min-height: 44px;
+  }
+}
+
+@media (max-width: 768px){
+  .slides .navigation .prev, .slides .navigation .next{
+    font-size: 15px;
+    padding: 10px;
+    min-width: 44px;
+    min-height: 44px;
+  }
+}
+
+@media (max-width: 576px){
+  .slides .navigation .prev, .slides .navigation .next{
+    font-size: 12px;
+    padding: 7px;
+    min-width: 44px;
+    min-height: 44px;
+  }
+}
+
+@media (max-width: 360px){
+  .slides .navigation .prev, .slides .navigation .next{
+    font-size: 11px;
+    padding: 6px;
+    min-width: 44px;
+    min-height: 44px;
+  }
+}
